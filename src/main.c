@@ -188,12 +188,18 @@ int main()
                 if (i > 0 && stepStart < endTime[step][i - 1])
                     stepStart = endTime[step][i - 1];
 
+                int waitTime = stepStart - previousStepEnd[i];
+                if (waitTime > 0)
+                {
+                    printf("\tPizza %d - Várakozik a tárolóban, Időtartam: %d\n", i + 1, waitTime);
+                }
+
                 startTime[step][i] = stepStart;
                 endTime[step][i] = startTime[step][i] + durations[step][i];
                 previousStepEnd[i] = endTime[step][i];
 
                 printf("\tPizza %d - Kezdés: %d, Időtartam: %d, Befejezés: %d\n",
-                       i + 1, startTime[step][i], durations[step][i], endTime[step][i]);
+                    i + 1, startTime[step][i], durations[step][i], endTime[step][i]);
             }
         }
     }
