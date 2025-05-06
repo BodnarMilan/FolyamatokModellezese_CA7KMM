@@ -1,0 +1,57 @@
+testing settings:
+#define STEPS 6             //  do not modify, these are the required steps of the pizza's journey
+
+#define PIZZAS 6            //  number of pizzas to be made
+#define MIN_TIME 1          //  minimum time for the steps
+#define MAX_TIME 10         //  maximum time for the steps
+
+#define OVEN_CAPACITY 2     //  pizza baking oven's maximum capacity
+
+Lépés 1: Megrendelés
+        Pizza 1 - Kezdés: 0, Időtartam: 1, Befejezés: 1
+        Pizza 2 - Kezdés: 1, Időtartam: 3, Befejezés: 4
+        Pizza 3 - Kezdés: 4, Időtartam: 8, Befejezés: 12
+        Pizza 4 - Kezdés: 12, Időtartam: 10, Befejezés: 22
+        Pizza 5 - Kezdés: 22, Időtartam: 6, Befejezés: 28
+        Pizza 6 - Kezdés: 28, Időtartam: 4, Befejezés: 32
+
+Lépés 2: Tészta nyújtás
+        Pizza 1 - Kezdés: 1, Időtartam: 7, Befejezés: 8
+        Pizza 2 - Kezdés: 8, Időtartam: 8, Befejezés: 16
+        Pizza 3 - Kezdés: 16, Időtartam: 1, Befejezés: 17
+        Pizza 4 - Kezdés: 22, Időtartam: 2, Befejezés: 24
+        Pizza 5 - Kezdés: 28, Időtartam: 8, Befejezés: 36
+        Pizza 6 - Kezdés: 36, Időtartam: 6, Befejezés: 42
+
+Lépés 3: Szósz hozzáadás
+        Pizza 1 - Kezdés: 8, Időtartam: 2, Befejezés: 10
+        Pizza 2 - Kezdés: 16, Időtartam: 7, Befejezés: 23
+        Pizza 3 - Kezdés: 23, Időtartam: 5, Befejezés: 28
+        Pizza 4 - Kezdés: 28, Időtartam: 10, Befejezés: 38
+        Pizza 5 - Kezdés: 38, Időtartam: 4, Befejezés: 42
+        Pizza 6 - Kezdés: 42, Időtartam: 7, Befejezés: 49
+
+Lépés 4: Feltét hozzáadás
+        Pizza 1 - Kezdés: 10, Időtartam: 8, Befejezés: 18
+        Pizza 2 - Kezdés: 23, Időtartam: 10, Befejezés: 33
+        Pizza 3 - Kezdés: 33, Időtartam: 6, Befejezés: 39
+        Pizza 4 - Kezdés: 39, Időtartam: 7, Befejezés: 46
+        Pizza 5 - Kezdés: 46, Időtartam: 5, Befejezés: 51
+        Pizza 6 - Kezdés: 51, Időtartam: 1, Befejezés: 52
+
+Lépés 5: Sütés
+        Pizza 1 - Kezdés: 18, Időtartam: 5, Befejezés: 23
+        Pizza 2 - Kezdés: 33, Időtartam: 10, Befejezés: 43
+        Pizza 3 - Kezdés: 39, Időtartam: 2, Befejezés: 41
+        Pizza 4 - Kezdés: 46, Időtartam: 10, Befejezés: 56
+        Pizza 5 - Kezdés: 51, Időtartam: 9, Befejezés: 60
+        Pizza 6 - Várakozik a sütő tárolóban, Időtartam: 4
+        Pizza 6 - Kezdés: 56, Időtartam: 8, Befejezés: 64
+
+Lépés 6: Szállítás
+        Pizza 1 - Kezdés: 64, Időtartam: 7, Befejezés: 71
+        Pizza 2 - Kezdés: 64, Időtartam: 10, Befejezés: 74
+        Pizza 3 - Kezdés: 64, Időtartam: 5, Befejezés: 69
+        Pizza 4 - Kezdés: 64, Időtartam: 9, Befejezés: 73
+        Pizza 5 - Kezdés: 64, Időtartam: 10, Befejezés: 74
+        Pizza 6 - Kezdés: 64, Időtartam: 5, Befejezés: 69
